@@ -1,7 +1,5 @@
-node puppet.local {
-  include role::master
+node default {
 }
-
-node elk.local {
-  include role::elk
+node 'master.puppet.vm {
+  include role::master_server
 }
